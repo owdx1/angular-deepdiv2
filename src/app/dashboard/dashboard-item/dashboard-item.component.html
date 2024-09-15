@@ -1,0 +1,14 @@
+<main class="space-y-2">
+  <header class="flex items-center justify-between p-4 border-b">
+    <img 
+      [src]="image"
+      alt=""
+      class="w-8 h-8"
+    />
+    <p class="font-bold text-lg">{{title}}</p>
+  </header>
+  <div class="p-4">
+    <!-- content comes here -->
+     <ng-content />
+  </div>
+</main>

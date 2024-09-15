@@ -1,0 +1,22 @@
+<form action="" class="flex flex-col gap-4 p-2">
+  <div class="w-full grid grid-cols-3 items-center justify-start gap-4">
+    <label for="title" class="font-semibold col-span-1">Title: </label>
+    <input 
+      id="title"
+      class="border-2 border-gray-200 rounded py-1 px-2 col-span-2"
+      [(ngModel)]="newTicket.title"
+      name="title"
+    />
+  </div> 
+  <div class="w-full grid grid-cols-3 items-center justify-start gap-4">
+    <label for="title" class="font-semibold col-span-1">Description: </label>
+    <textarea 
+      id="desc "
+      class="border-2 border-gray-200 rounded py-1 px-2 col-span-2"
+      rows="4"
+      [(ngModel)]="newTicket.desc"
+      name="desc"
+    ></textarea>
+  </div> 
+  <button appButton class="border rounded p-2 bg-gradient-to-r from-rose-700 to-fuchsia-700 text-white">Submit <span class="icon">→</span></button>
+</form>

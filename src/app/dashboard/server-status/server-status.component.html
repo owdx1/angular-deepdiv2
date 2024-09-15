@@ -1,0 +1,17 @@
+<div>
+  @if (currentStatus === "online") {
+    <div class="w-full flex items-center justify-between animate-pulse">
+      <div> Online </div>
+      <div style="background-color: green;" class="w-4 h-4 rounded-full"></div>
+    </div>
+  }
+  @else {
+    <div class="w-full flex items-center justify-between">
+      <div> Offline </div>
+      <div style="background-color: red;" class="w-4 h-4 rounded-full"></div>
+    </div>
+  }
+</div>
+
+
+
