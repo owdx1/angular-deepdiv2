@@ -1,5 +1,9 @@
 <div class="flex flex-col gap-2">
-  <app-new-ticket-form />
+  <app-new-ticket-form (addTicket)="handleAddTicket($event)" />
   <hr />
-  <app-ticket />
+  @for (ticket of tickets; track ticket.id) {
+    <app-ticket [ticket]="ticket" (ticketComplete)="handleTicketComplete(ticket.id)"/>
+  } @empty {
+    <p>No tickets available</p>
+  }
 </div>
